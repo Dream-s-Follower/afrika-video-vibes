@@ -1,6 +1,5 @@
 
 import { useRef, useState } from "react";
-import { Youtube, ArrowUp } from "lucide-react";
 
 type Video = {
   id: number;
@@ -12,76 +11,77 @@ type Video = {
 };
 
 export default function VideoCard({ video }: { video: Video }) {
-  const [hovered, setHovered] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
 
-  // lazy loading via poster/thumbnails & "auto play" preview uniquement sur hover desktop
-  const playPreview = () => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.muted = true;
+  const handlePlayPause = () => {
+    if (!videoRef.current) return;
+    if (playing) {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else {
       videoRef.current.play();
+      setPlaying(true);
     }
   };
-  const pausePreview = () => {
+
+  // Arrête la vidéo quand on quitte le composant
+  const handleBlur = () => {
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
+      setPlaying(false);
     }
   };
 
-  // Responsive ratio & design
-  const ratioClass =
-    video.format === "vertical" ? "aspect-[9/16]" : "aspect-[16/9]";
+  const ratioClass = video.format === "vertical" ? "aspect-[9/16]" : "aspect-[16/9]";
 
   return (
-    <div
-      className={`bg-white rounded-2xl p-3 shadow relative hover:shadow-xl transition-all group border-l-8 ${video.format === "vertical" ? "border-accent" : "border-anthracite"}`}
-    >
+    <div className="bg-white rounded-2xl p-3 shadow-md flex flex-col transition hover:shadow-lg border-l-8 border-accent">
       <div
-        className={`block overflow-hidden rounded-xl ${ratioClass} bg-gray-200 cursor-pointer`}
+        className={`overflow-hidden rounded-xl ${ratioClass} bg-gray-200 flex items-center justify-center relative group`}
         tabIndex={0}
-        role="button"
-        aria-label={`Lister la vidéo ${video.title}`}
-        onMouseEnter={() => { playPreview(); setHovered(true); }}
-        onMouseLeave={() => { pausePreview(); setHovered(false); }}
-        onFocus={() => setHovered(true)}
-        onBlur={() => setHovered(false)}
+        onBlur={handleBlur}
       >
         <video
           ref={videoRef}
-          className={`w-full h-full object-cover rounded-xl transition-all duration-300 ${hovered ? "scale-105" : "scale-100"}`}
+          className="w-full h-full object-cover rounded-xl cursor-pointer"
           src={video.src}
           poster={video.thumbnail}
-          preload="none"
+          preload="metadata"
+          controls={false}
           tabIndex={-1}
+          onClick={handlePlayPause}
           playsInline
         />
-        {!hovered && (
-          <img
-            src={video.thumbnail}
-            alt={video.title}
-            className="absolute inset-0 w-full h-full object-cover rounded-xl"
-            style={{ pointerEvents: "none" }}
-            draggable={false}
-          />
+        {!playing && (
+          <button
+            onClick={handlePlayPause}
+            className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/50 transition rounded-xl"
+            aria-label={`Lire la vidéo ${video.title}`}
+            tabIndex={0}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 48 48" width={56} height={56}>
+              <circle cx="24" cy="24" r="24" fill="rgba(0,0,0,0.35)" />
+              <polygon points="18,15 36,24 18,33" fill="white" />
+            </svg>
+          </button>
+        )}
+        {playing && (
+          <button
+            onClick={handlePlayPause}
+            className="absolute bottom-4 right-4 bg-black/60 hover:bg-black/80 rounded-full p-2"
+            aria-label="Mettre la vidéo sur pause"
+          >
+            <svg width={24} height={24} viewBox="0 0 24 24" fill="white">
+              <rect x="5" y="4" width="4" height="16"></rect>
+              <rect x="15" y="4" width="4" height="16"></rect>
+            </svg>
+          </button>
         )}
       </div>
-      <div className="pt-3 pb-1 flex items-center gap-3">
-        <span className={`text-xs px-2 py-1 rounded-full ${video.format === "vertical" ? "bg-accent-light" : "bg-anthracite text-beige"}`}>
-          {video.platform}
-        </span>
-        <span className="text-base font-bold flex-1">{video.title}</span>
-      </div>
-      {/* Partage boutons */}
-      <div className="flex gap-2 pl-1">
-        <button className="bg-accent hover:bg-accent-light transition-colors text-white px-2 py-1 rounded-full text-xs flex items-center gap-1" title="Partager">
-          <ArrowUp size={16} className="rotate-45" />
-          Partager
-        </button>
-        <a className="ml-auto" href={video.src} target="_blank" rel="noopener noreferrer">
-          <Youtube size={20} className="text-accent" />
-        </a>
+      <div className="pt-3 pb-1 flex items-center justify-center">
+        <span className="text-base font-bold text-anthracite text-center">{video.title}</span>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowDown } from "lucide-react";
 
 export default function Index() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-beige min-h-screen flex flex-col">
       <Navbar />
@@ -23,10 +25,13 @@ export default function Index() {
               <Link to="/portfolio" className="bg-accent hover:bg-accent-light text-white font-bold py-3 px-7 rounded-lg shadow-lg transition-colors">
                 Découvrir mon travail
               </Link>
-              <a href="#contact" className="bg-anthracite hover:bg-accent text-beige hover:text-anthracite font-bold py-3 px-7 rounded-lg shadow-lg transition-colors border border-accent flex items-center gap-2">
+              <button
+                onClick={() => navigate("/contact")}
+                className="bg-anthracite hover:bg-accent text-beige hover:text-anthracite font-bold py-3 px-7 rounded-lg shadow-lg transition-colors border border-accent flex items-center gap-2"
+              >
                 Collaborer ensemble
                 <ArrowDown size={20} />
-              </a>
+              </button>
             </div>
           </div>
           <div className="w-full flex justify-center">
