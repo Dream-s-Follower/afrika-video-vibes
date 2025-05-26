@@ -17,7 +17,7 @@ export default function Contact() {
       <main className="container flex-1 py-12" id="contact">
         <h1 className="text-3xl md:text-4xl font-playfair font-bold text-accent mb-8">Contact</h1>
         <p className="mb-6 text-lg">Envie de collaborer, besoin d’un devis ou d’un renseignement ?<br />Écrivez-moi !</p>
-        <form className="bg-white rounded-xl shadow p-8 max-w-lg mx-auto grid gap-6" onSubmit={handleSubmit}>
+        <form action="mailto:feadiana0@gmail.com" className="bg-white rounded-xl shadow p-8 max-w-lg mx-auto grid gap-6" onSubmit={handleSubmit}>
           <div>
             <label className="block mb-1 font-semibold" htmlFor="nom">Nom</label>
             <input type="text" required id="nom" name="nom" className="w-full rounded border border-accent px-4 py-2" placeholder="Votre nom" />
@@ -39,7 +39,7 @@ export default function Contact() {
           </button>
           <div className="flex gap-4 justify-center mt-2">
             <a href="https://www.linkedin.com/in/diana-fea-05ab441b3" className="hover:underline text-accent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.instagram.com/" className="hover:underline text-accent" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/didi_fea" className="hover:underline text-accent" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </form>
       </main>
