@@ -16,9 +16,13 @@ export default function About() {
             loading="lazy"
           />
           <div>
-            <h2 className="text-xl font-bold mb-4">Je m’appelle [Prénom NOM]</h2>
+            <h2 className="text-xl font-bold mb-4">Je m’appelle Diana Fea</h2>
             <p className="mb-4">
-              Community manager vidéo basée en Afrique, j’accompagne les entrepreneurs, créateur·ices et entreprises désireux·ses de se démarquer sur les réseaux sociaux avec des contenus créatifs, adaptés et qui engagent.
+              Je suis créatrice de contenu vidéo et community manager indépendante, basée en Côte d’Ivoire.
+              J’aide les entreprises à se rendre visibles sur les réseaux sociaux grâce à des vidéos créatives, des idées de publications, et des stratégies simples et efficaces adaptées à chaque plateforme.
+            </p>
+            <p className="mb-4">
+              Je réalise des contenus courts, engageants et adaptés aux tendances (TikTok, Reels, Shorts…), et je propose aussi des idées de planning ou de rubriques pour mieux structurer la communication digitale.
             </p>
             <ul className="mb-4 list-disc list-inside">
               <li>Expertise en animation de communautés et storytelling vidéo</li>
@@ -26,7 +30,12 @@ export default function About() {
               <li>Expérience auprès de marques locales et internationales</li>
             </ul>
             <p>
-              Mon parcours : [Décris ici une expérience phare, formation ou succès-clé].
+              Mon parcours :
+              <ul className="mb-4 list-disc list-inside">
+                <li>Diplômée en marketing digital, je comprends les besoins des entreprises en visibilité et en communication sur les réseaux sociaux.</li>
+                <li>Projets vidéo réalisés pour des commerçants et PME locales, avec des contenus simples, créatifs et percutants.</li>
+                <li>Compétences en création vidéo et en stratégie de contenu pour aider les entreprises à mieux communiquer et à renforcer leur présence en ligne.</li>
+              </ul>
             </p>
           </div>
         </div>

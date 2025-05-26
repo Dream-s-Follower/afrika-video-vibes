@@ -38,7 +38,7 @@ export default function Contact() {
             {status === "sent" ? "Message envoyé !" : "Envoyer"}
           </button>
           <div className="flex gap-4 justify-center mt-2">
-            <a href="https://www.linkedin.com/" className="hover:underline text-accent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/diana-fea-05ab441b3" className="hover:underline text-accent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://www.instagram.com/" className="hover:underline text-accent" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </form>

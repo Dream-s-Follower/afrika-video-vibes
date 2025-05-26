@@ -15,11 +15,10 @@ export default function Index() {
         <section className="container py-20 flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-playfair font-bold mb-6 leading-tight animate-fade-in">
-              Bonjour, <span className="text-accent">je suis une community manager</span> <br />
-              <span className="text-accent">spécialisée vidéo</span> passionnée & indépendante
-            </h1>
+              Bonjour, <span className="text-accent">je suis créatrice de contenu vidéo et community manager passionnée et indépendante.</span>            </h1>
             <p className="text-lg mb-8">
-              J’aide les entrepreneurs et marques africaines à rayonner sur les réseaux sociaux grâce à des contenus vidéo captivants, adaptés à chaque plateforme.
+              Je filme, monte et diffuse des vidéos percutantes qui valorisent les entreprises locales : restaurants, hôtels, boutiques, événements ou projets immobiliers.
+Ma mission : créer du contenu authentique qui attire, touche et convertit sur les réseaux sociaux.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/portfolio" className="bg-accent hover:bg-accent-light text-white font-bold py-3 px-7 rounded-lg shadow-lg transition-colors">
@@ -45,15 +44,20 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl py-8 px-6 shadow transition-transform hover:scale-105 border-t-4 border-accent">
               <h3 className="font-bold text-xl mb-2">Création de contenu vidéo</h3>
-              <p>Production de vidéos impactantes, adaptées aux tendances et formats (Reels, TikTok, Shorts, etc).</p>
+              <p>Je réalise des vidéos courtes, dynamiques et sur-mesure pour valoriser vos produits, vos services ou vos événements.
+Je m’occupe de la prise de vues (iPhone 16 Pro), du montage (CapCut), des transitions, du storytelling, et de l’adaptation aux formats tendances (Reels, TikTok, Shorts).
+Chaque vidéo est pensée pour créer de l’impact sur les réseaux sociaux.
+</p>
             </div>
             <div className="bg-white rounded-xl py-8 px-6 shadow transition-transform hover:scale-105 border-t-4 border-accent">
               <h3 className="font-bold text-xl mb-2">Gestion de communautés</h3>
-              <p>Animation, modération et développement de votre communauté sur les réseaux sociaux.</p>
+              <p>Je vous aide à interagir avec votre audience, créer un lien, et améliorer l’engagement sur vos pages. et la gestion basique des publications pour renforcer votre présence en ligne.
+</p>
             </div>
             <div className="bg-white rounded-xl py-8 px-6 shadow transition-transform hover:scale-105 border-t-4 border-accent">
               <h3 className="font-bold text-xl mb-2">Stratégie de contenu</h3>
-              <p>Définition d’une stratégie audiovisuelle personnalisée pour chaque plateforme.</p>
+              <p>Je vous accompagne dans la définition d’un plan de contenu clair, en fonction de vos objectifs (notoriété, vente, fidélisation).
+Je vous aide à choisir les bons formats, les bonnes fréquences de publication, et à organiser votre contenu selon les plateformes (Instagram, Facebook, TikTok, YouTube Shorts).</p>
             </div>
           </div>
           <div className="flex justify-center mt-10">
