@@ -12,32 +12,46 @@ const FORMAT_LABELS = [
 const VIDEOS = [
   {
     id: 1,
-    title: "Lancement d’une campagne TikTok",
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    title: "Création de contenu TikTok",
+    src: "https://ywmilwnkqidziruqiedx.supabase.co/storage/v1/object/public/test//videos1.mp4",
     format: "vertical",
     platform: "TikTok",
-    thumbnail:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=400&h=600",
   },
   {
     id: 2,
-    title: "Présentation d’un produit",
-    src: "https://www.w3schools.com/html/movie.mp4",
-    format: "horizontal",
+    title: "Présentation produit YouTube",
+    src: "https://ywmilwnkqidziruqiedx.supabase.co/storage/v1/object/public/test//videos2.mp4",
+    format: "vertical",
     platform: "YouTube",
-    thumbnail:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=facearea&w=600&h=400",
   },
   {
     id: 3,
-    title: "Inspiration Reels Instagram 2024",
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    title: "Reels Instagram créatif",
+    src: "https://ywmilwnkqidziruqiedx.supabase.co/storage/v1/object/public/test//videos3.mp4",
     format: "vertical",
     platform: "Instagram",
-    thumbnail:
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=facearea&w=400&h=600",
   },
-  // autres vidéos fictives pour la galerie...
+  {
+    id: 4,
+    title: "Contenu marketing dynamique",
+    src: "https://ywmilwnkqidziruqiedx.supabase.co/storage/v1/object/public/test//videos4.mp4",
+    format: "vertical",
+    platform: "YouTube",
+  },
+  {
+    id: 5,
+    title: "Story Instagram engageante",
+    src: "https://ywmilwnkqidziruqiedx.supabase.co/storage/v1/object/public/test//videos5.mp4",
+    format: "vertical",
+    platform: "Instagram",
+  },
+  {
+    id: 6,
+    title: "Vidéo promotionnelle courte",
+    src: "https://ywmilwnkqidziruqiedx.supabase.co/storage/v1/object/public/test//videos6.mp4",
+    format: "vertical",
+    platform: "TikTok",
+  },
 ];
 
 export default function Portfolio() {
