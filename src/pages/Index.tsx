@@ -62,16 +62,6 @@ export default function Index() {
             </Link>
           </div>
         </section>
-
-        {/* CTA Media Kit */}
-        <section className="container py-12 flex items-center justify-center">
-          <a
-            href="#"
-            className="bg-accent hover:bg-accent-light text-white font-bold py-4 px-8 rounded-lg shadow-lg transition-colors text-xl"
-          >
-            Télécharger mon media kit
-          </a>
-        </section>
       </main>
       <Footer />
     </div>

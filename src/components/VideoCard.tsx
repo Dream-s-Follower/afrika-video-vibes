@@ -1,4 +1,3 @@
-
 import { useRef, useState } from "react";
 
 type Video = {
@@ -7,7 +6,7 @@ type Video = {
   src: string;
   format: string;
   platform: string;
-  thumbnail: string;
+  thumbnail?: string;
 };
 
 export default function VideoCard({ video }: { video: Video }) {
