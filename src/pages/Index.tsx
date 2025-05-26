@@ -34,7 +34,7 @@ Ma mission : créer du contenu authentique qui attire, touche et convertit sur l
             </div>
           </div>
           <div className="w-full flex justify-center">
-            <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=600&h=600&facepad=2.5" alt="Community manager africaine" className="rounded-3xl shadow-xl max-w-xs md:max-w-sm object-cover border-4 border-accent" />
+            <img src="/media/Diana_Fea_Profile.jpg" alt="Community manager africaine" className="rounded-3xl shadow-xl max-w-xs md:max-w-sm object-cover border-4 border-accent" />
           </div>
         </section>
 
@@ -44,20 +44,22 @@ Ma mission : créer du contenu authentique qui attire, touche et convertit sur l
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl py-8 px-6 shadow transition-transform hover:scale-105 border-t-4 border-accent">
               <h3 className="font-bold text-xl mb-2">Création de contenu vidéo</h3>
-              <p>Je réalise des vidéos courtes, dynamiques et sur-mesure pour valoriser vos produits, vos services ou vos événements.
-Je m’occupe de la prise de vues (iPhone 16 Pro), du montage (CapCut), des transitions, du storytelling, et de l’adaptation aux formats tendances (Reels, TikTok, Shorts).
-Chaque vidéo est pensée pour créer de l’impact sur les réseaux sociaux.
-</p>
+              <p>
+                Je réalise des vidéos courtes, dynamiques et sur-mesure pour valoriser vos produits, vos services ou vos événements.
+                Je m’occupe de la prise de vues (iPhone 16 Pro), du montage (CapCut), des transitions, du storytelling, et de l’adaptation aux formats tendances (Reels, TikTok, Shorts).
+                Chaque vidéo est pensée pour créer de l’impact sur les réseaux sociaux.
+              </p>
             </div>
             <div className="bg-white rounded-xl py-8 px-6 shadow transition-transform hover:scale-105 border-t-4 border-accent">
               <h3 className="font-bold text-xl mb-2">Gestion de communautés</h3>
-              <p>Je vous aide à interagir avec votre audience, créer un lien, et améliorer l’engagement sur vos pages. et la gestion basique des publications pour renforcer votre présence en ligne.
-</p>
+              <p>Je vous aide à interagir avec votre audience, créer un lien, et améliorer l’engagement sur vos pages. et la gestion basique des publications pour renforcer votre présence en ligne.</p>
             </div>
             <div className="bg-white rounded-xl py-8 px-6 shadow transition-transform hover:scale-105 border-t-4 border-accent">
               <h3 className="font-bold text-xl mb-2">Stratégie de contenu</h3>
-              <p>Je vous accompagne dans la définition d’un plan de contenu clair, en fonction de vos objectifs (notoriété, vente, fidélisation).
-Je vous aide à choisir les bons formats, les bonnes fréquences de publication, et à organiser votre contenu selon les plateformes (Instagram, Facebook, TikTok, YouTube Shorts).</p>
+              <p>
+                Je vous accompagne dans la définition d’un plan de contenu clair, en fonction de vos objectifs (notoriété, vente, fidélisation).
+                Je vous aide à choisir les bons formats, les bonnes fréquences de publication, et à organiser votre contenu selon les plateformes (Instagram, Facebook, TikTok, YouTube Shorts).
+              </p>
             </div>
           </div>
           <div className="flex justify-center mt-10">

@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="bg-beige shadow-md sticky top-0 z-30">
       <div className="container flex items-center justify-between py-3">
         <Link to="/" className="text-2xl font-bold font-playfair text-accent">
-          CM Vidéo Afrique
+          CM Diana Fea
         </Link>
         {/* Desktop nav */}
         <ul className="hidden md:flex gap-6 font-medium">

@@ -10,7 +10,7 @@ export default function About() {
         <h1 className="text-3xl md:text-4xl font-playfair font-bold text-accent mb-8">À propos</h1>
         <div className="md:flex gap-8">
           <img
-            src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=facearea&w=400&h=500"
+            src="/media/Diana_Fea_Profile.jpg"
             alt="Portrait"
             className="rounded-2xl mb-6 max-w-xs shadow-lg"
             loading="lazy"
