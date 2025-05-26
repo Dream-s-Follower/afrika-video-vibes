@@ -22,11 +22,6 @@ export default function Services() {
             <p>Planification éditoriale, analyse des tendances, reporting et recommandations personnalisées.</p>
           </div>
         </div>
-        <div className="flex justify-center mt-10">
-          <a href="#contact" className="bg-accent hover:bg-accent-light text-white font-bold py-3 px-7 rounded-lg shadow-lg transition-colors text-lg">
-            Demander un devis
-          </a>
-        </div>
       </main>
       <Footer />
     </div>
